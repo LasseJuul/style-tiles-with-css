@@ -1,8 +1,11 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+/*@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");*/
+@import url("https://fonts.googleapis.com/css?family=ubuntu");
 
 * {
   box-sizing: border-box;
@@ -14,28 +17,28 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #2f3dff; /*blue*/
+  --link-color: #000; /*black*/
+  --link-hover-color: #b5adaa; /*grey*/
+  --color-4: #49b354; /*green*/
+  --color-5: #a1492c; /*red brown*/
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
+  --primary-font: "Ubuntu", sans-serif;
+  --secondary-font: "Ubuntu", serif;
   --main-text-color: #000;
 
   --white-space: 1rem;
 }
 
 button {
-  transition: all 3s;
+  transition: all .3s;
 }
 a {
-  transition: all 3s;
+  transition: all .3s;
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
+  transform: scale(1.1);
 }
 
 button:active {
@@ -145,13 +148,15 @@ ul li:last-child {
   background-color: var(--color-5);
 }
 
+/*
 .textures li {
   height: 30vw;
   width: 40%;
   margin-right: 5vw;
 }
+*/
 
-.texture-swatch-1 {
+/*.texture-swatch-1 {
   background: url(../img/pw_maze_white.png) top left repeat;
 }
 
@@ -165,7 +170,7 @@ ul li:last-child {
 
 .texture-swatch-3 {
   background: url(../img/white_paperboard.png) top left repeat;
-}
+}*/
 
 .images ul {
   flex-direction: column;
@@ -195,7 +200,7 @@ button {
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: var(--link-color);
 }
 
 button:focus,
@@ -250,14 +255,14 @@ p[class*="font-details-"] {
   color: #6f6f6f;
 }
 
-.adjectives ul {
+/*.adjectives ul {
   font-size: 2rem;
   opacity: 0.5;
 }
 
 .adjectives ul {
   flex-direction: column;
-}
+}*/
 
 footer {
   font-style: italic;
